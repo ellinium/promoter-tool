@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <title>PSSM score tool for E.coli promoters</title>
+    <link rel="stylesheet" href="DataTables\datatables.css">
+    <style>
+        <!--table {margin-left:0px}-->
+/* fieldset#outer {
+  background-color:rgb(49, 150, 197);
+  /*background-color: rgb(215, 232, 240);
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 1px groove (internal value);    
+} */
+fieldset#inner { 
+  display: block;
+  background-color:rgb(72, 152, 189);
+  /* background-color:rgb(49, 150, 197);*/
+  /*background-color: rgb(215, 232, 240);*/ 
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 1px groove (internal value);
+  font-size: 110%;
+  /*font-weight: bold;*/
+}
+caption {
+    font-size: 160%;
+    caption-side: left;
+}
+ table th {
+  background-color: rgb(215, 232, 240);
+  color: rgb(0, 0, 0);
+  border-collapse: collapse;
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+table tr:nth-child(odd) {
+ background-color: rgb(190, 225, 253);
+} 
+</style>
+</head>
+<html lang="en">
+
+<script type="text/javascript" src="promoter_const.js"></script>
+<script type="text/javascript" src="promoter.js"></script>
+<!---<script src="sorttable.js"></script>-->
+<script src="DataTables\datatables.js"></script>
+
+<fieldset align='center' id='inner'>
+    <p>
+        <p align="center">Calculate PSSM scores for E. coli promoters:</p>
+        <label>-35 box promoter:</label>
+        <input type="text" name="-35box" id="-35box">
+    </p>
+    <label></label>-10 box promoter:</label>
+    <input type="text" name="-10box" id="-10box">
+    </p>
+    <div id="errorMessage"></div>
+    <div id="formCheck"></div>
+    <button onclick="calculatePromoter()" align='center'>Calculate</button>
+    <button onclick="clearForm()" align='center'>Clear</button>
+</fieldset>
+<p align='center'>
+    <table id='35box_table'>
+        <tbody></tbody>
+    </table>
+    <table id='10box_table'>
+        <tbody></tbody>
+    </table>
+
+</html>
