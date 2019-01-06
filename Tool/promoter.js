@@ -11,8 +11,7 @@
                 throw ERR_BOX_IS_EMPTY;
             }
 
-            //TODO
-            if (box35Value.length != 6 || box10Value.length != 6) {
+            if ((box35Value != "" && box35Value.length != 6) || (box10Value != "" && box10Value.length != 6)) {
                 throw ERR_SYMBOL_NUMBER;
             }
 
