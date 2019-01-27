@@ -1,0 +1,54 @@
+
+fieldset#inner { 
+  display: block;
+  background-color:rgb(72, 152, 189);
+  /* background-color:rgb(49, 150, 197);*/
+  /*background-color: rgb(215, 232, 240);*/ 
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 1px groove (internal value);
+  font-size: 110%;
+  /*font-weight: bold;*/
+}
+table#35box_table {
+    width: 10%;  
+}
+caption {
+    font-size: 160%;
+    caption-side: center;
+}
+
+ table th {
+  background-color: rgb(215, 232, 240);
+  color: rgb(0, 0, 0);
+  border-collapse: collapse;
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+tr {
+    text-align: center;
+}
+tr.group {
+   color: #854245; 
+   font-weight: bold;
+   text-decoration: underline;
+   text-align: left;
+}
+tr.group:hover {
+    background-color: #ddd;
+}
+tr {
+    text-align: center;
+}
+
+
+div.footer {
+    position: relative;
+    font-size:small;
+    bottom: 0;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>PSSM score tool for E.coli promoters</title>
+    <link rel="stylesheet" href="promoter.css">
+    <link rel="stylesheet" href="DataTables\datatables.css">
+</head>
+<body>
+<html lang="en">
+
+<script type="text/javascript" src="promoter_const.js?version=1"></script>
+<script type="text/javascript" src="promoter.js?version=3"></script>
+<!---<script src="sorttable.js"></script>-->
+<script src="DataTables\datatables.js"></script>
+
+<fieldset align='center' id='inner'>
+    <p>
+        <p align="center">Calculate <a href="pssm_table.html" target="_blank">PSSM scores</a> for E. coli promoters:</p>
+        <label>-35 box promoter:</label>
+        <input type="text" name="-35box" id="-35box">
+    </p>
+    <label></label>-10 box promoter:</label>
+    <input type="text" name="-10box" id="-10box">
+    </p>
+    <div id="errorMessage"></div>
+    <div id="formCheck"></div>
+    <button onclick="calculatePSSM()" align='center'>Calculate</button>
+    <button onclick="clearForm()" align='center'>Clear</button>
+</fieldset>
+    <p align='center'><a href="aa_table.html" target="_blank">*Amino acids reference table</a></p>
+
+<table id='35box_table' style="width:70%">
+    <tbody></tbody>
+</table>
+<br>
+<br>
+<table id='10box_table' style="width:70%">
+    <tbody></tbody>
+</table>
+<br><br>
+
+
+<div class="footer">PSSM scores for E.coli - <a href = "mailto:dominic.logel@mq.edu.au">Dominic Logel</a>
+<br>Tech support - <a href = "mailto:ellina.trofimova@gmail.com">Ellina Trofimova</a></div>
+</body>
+</html>

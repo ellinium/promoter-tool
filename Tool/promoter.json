@@ -1,0 +1,26 @@
+[{
+  "aminoAcids":[
+      {"name":"phenylalanine", "longCode":"Phe", "shortCode": "F", "codons":["UUU","UUC"]},
+      {"name":"leucine", "longCode":"Leu", "shortCode": "L", "codons":["UUA","UUG","CUU","CUC","CUA","CUG"]},
+      {"name":"isoleucine", "longCode":"Leu", "shortCode": "L", "codons":["AUU","AUC","AUA"]},  
+      {"name":"methionine", "longCode":"Met", "shortCode": "M", "codons":["AUG"]},
+      {"name":"valine", "longCode":"GUU", "shortCode": "V", "codons":["GUU","GUC","GUA","GUG"]},
+      {"name":"serine", "longCode":"Ser", "shortCode": "S", "codons":["UCU","UCC","UCA","UCG"]},
+      {"name":"proline", "longCode":"Pro", "shortCode": "P", "codons":["CCU","CCC","CCA","CCG"]},
+      {"name":"threonine", "longCode":"Thr", "shortCode": "T", "codons":["ACU","ACC","ACA","ACG"]},
+      {"name":"alanine", "longCode":"Ala", "shortCode": "A", "codons":["GCU","GCC","GCA","GCG"]},      
+      {"name":"tyrosine", "longCode":"Tyr", "shortCode": "Y", "codons":["UAU","UAC"]},
+      {"name":"histidine", "longCode":"His", "shortCode": "H", "codons":["CAU","CAC"]},
+      {"name":"glutamine", "longCode":"Gln", "shortCode": "Q", "codons":["CAA","CAG"]},
+      {"name":"asparagine", "longCode":"Asn", "shortCode": "N", "codons":["AAU","AAC"]},
+      {"name":"lysine", "longCode":"Lys", "shortCode": "K", "codons":["AAA","AAG"]},
+      {"name":"aspartic acid", "longCode":"Asp", "shortCode": "D", "codons":["GAU","GAC"]},
+      {"name":"glutamic acid", "longCode":"Glu", "shortCode": "E", "codons":["GAA","GAG"]},
+      {"name":"cysteine", "longCode":"Cys", "shortCode": "C", "codons":["UGU","UGC"]},
+      {"name":"tryptophan", "longCode":"Trp", "shortCode": "W", "codons":["UGG"]},
+      {"name":"arginine", "longCode":"Arg", "shortCode": "R", "codons":["CGU","CGC","CGA","CGG","AGA","AGG"]},
+      {"name":"serine", "longCode":"Ser", "shortCode": "S", "codons":["AGU","AGC"]},
+      {"name":"glycine", "longCode":"Gly", "shortCode": "G", "codons":["GGU","GGC","GGA","GGG"]},    
+      {"name":"stopCodon", "longCode":"Stop", "shortCode": "SC", "codons":["UAA","UAG","UGA"]}
+    ]
+}]

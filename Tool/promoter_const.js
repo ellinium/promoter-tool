@@ -5,7 +5,7 @@ const aaPromoter = {
         { "name": "isoleucine", "longCode": "Leu", "shortCode": "L", "codons": ["AUU", "AUC", "AUA"] },
         { "name": "methionine", "longCode": "Met", "shortCode": "M", "codons": ["AUG"] },
         { "name": "valine", "longCode": "Val", "shortCode": "V", "codons": ["GUU", "GUC", "GUA", "GUG"] },
-        { "name": "serine", "longCode": "Ser", "shortCode": "S", "codons": ["UCU", "UCC", "UCA", "UCG"] },
+        { "name": "serine", "longCode": "Ser", "shortCode": "S", "codons": ["UCU", "UCC", "UCA", "UCG", "AGU", "AGC"]},
         { "name": "proline", "longCode": "Pro", "shortCode": "P", "codons": ["CCU", "CCC", "CCA", "CCG"] },
         { "name": "threonine", "longCode": "Thr", "shortCode": "T", "codons": ["ACU", "ACC", "ACA", "ACG"] },
         { "name": "alanine", "longCode": "Ala", "shortCode": "A", "codons": ["GCU", "GCC", "GCA", "GCG"] },
@@ -19,9 +19,8 @@ const aaPromoter = {
         { "name": "cysteine", "longCode": "Cys", "shortCode": "C", "codons": ["UGU", "UGC"] },
         { "name": "tryptophan", "longCode": "Trp", "shortCode": "W", "codons": ["UGG"] },
         { "name": "arginine", "longCode": "Arg", "shortCode": "R", "codons": ["CGU", "CGC", "CGA", "CGG", "AGA", "AGG"] },
-        { "name": "serine", "longCode": "Ser", "shortCode": "S", "codons": ["AGU", "AGC"] },
         { "name": "glycine", "longCode": "Gly", "shortCode": "G", "codons": ["GGU", "GGC", "GGA", "GGG"] },
-        { "name": "stopCodon", "longCode": "Stop", "shortCode": "*", "codons": ["UAA", "UAG", "UGA"] }
+        { "name": "stop codon", "longCode": "Stop", "shortCode": "Stop", "codons": ["UAA", "UAG", "UGA"] }
     ]
 }
 
@@ -88,7 +87,7 @@ const pssm = {
         },
         {
             "position": "4", "boxType": "-10", "nt": [
-                { "shortCode": "A", "value": "-0.96" },
+                { "shortCode": "A", "value": "0.96" },
                 { "shortCode": "C", "value": "-0.92" },
                 { "shortCode": "G", "value": "-0.82" },
                 { "shortCode": "U", "value": "-0.06" }
@@ -131,7 +130,7 @@ const pssm = {
 
 const ERR_AA_IS_NOT_FOUND = "ERR_0";
 const ERR_BOX_IS_EMPTY = "Please enter a value for -35 or -10 box";
-const ERR_SYMBOL_NUMBER = "The number of symbols should be equal to 6";
+const ERR_SYMBOL_NUMBER = "The number of symbols should be equal to 6 or 9";
 const ERROR_FIELD = "errorMessage";
 const ERROR = "Error: ";const CODON_SIZE_STR = "3";
 const CODON_SIZE_NUM = 3;
@@ -141,7 +140,12 @@ const STOP_CODON = "stopCodon";
 
 const BOX_35_TABLE = "35box_table";
 const BOX_10_TABLE = "10box_table";
+const PSSM_REF_TABLE = "pssm_ref_table";  
+const AA_REF_TABLE = "aa_ref_table";  
+
 const BOX_35_INPUT_BOX = "-35box";
 const BOX_10_INPUT_BOX = "-10box";
 const BOX_35_TABLE_CAPTION = "-35 box promoters";
 const BOX_10_TABLE_CAPTION = "-10 box promoters";
+const AA_REF_TABLE_CAPTION = "Amino acids reference table"
+const PSSM_REF_TABLE_CAPTION = "PSSM reference table (E.coli)"
